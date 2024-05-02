@@ -8,7 +8,7 @@ WORKDIR /my-ruby-app
 COPY . .
 
 # Expose the port on which the Ruby application will run
-EXPOSE 3005
+EXPOSE 4567
 
 # Command to start the Ruby application
 CMD ["ruby", "app.rb"]
