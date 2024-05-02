@@ -1,18 +1,10 @@
-# app.rb
+require 'sinatra'
 
-class Greeter
-  def initialize(name)
-    @name = name
-  end
-
-  def greet
-    "Hello, #{@name}!"
-  end
+# Define a route that responds to HTTP GET requests
+get '/' do
+  'Hello, world!'
 end
 
-# Create a new instance of the Greeter class
-greeter = Greeter.new("Ruby")
-
-# Call the greet method
-puts greeter.greet
+# Run the Sinatra web server on port 4567
+set :port, 4567
 
